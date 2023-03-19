@@ -1,0 +1,25 @@
+while(True):
+       number = int(input('Enter product number 1-5, or enter 0 to stop:')) 
+       
+       if number == 0:
+            break
+       quantity_sold = int(input('Enter quantity sold:'))
+       if number == 1:
+           api = quantity_sold * apple_iphone
+           total += api
+       elif number == 2:
+           anp = quantity_sold * android_phone
+           total += anp
+       elif number == 3:
+           apt = quantity_sold * apple_tablet
+           total += apt
+       elif number == 4:
+           ant = quantity_sold * android_tablet
+           total += ant
+       elif number == 5:
+           wt = quantity_sold * windows_tablet
+           total += wt
+       else:
+            print('Invalid input, please enter a valid number')
+    
+print('You total profit for today is:',total)
